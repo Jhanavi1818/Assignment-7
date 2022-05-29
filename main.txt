@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment 7} 
+\author{Kummitha Jhanavi (CS21BTECH11032)}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+
+
+% Blocks frame
+\section{Question}
+\begin{frame}{Question}
+    \begin{block}
+        
+        The random variables x and y are N(0,4) and independent.Find $f_{z}$(z) and $F_{z}$(z) if (a)z=2x + 3y, and (b) z= $\frac{x}{y}$
+    \end{block}
+    
+\end{frame} 
+\section{Definition}
+\begin{frame}{Definition}
+\begin{block}
+     
+     For any two random variables x and y ,let \sigma^2_{x}=Var{x},\sigma^2_{y}=Var{y} and \sigma^2_{x+y} Var{x+y}
+    
+     Then,
+     $\frac{\sigma_{x+y}}{\sigma_{x}+\sigma__{y}}$$\leq$1
+    
+\end{block}
+\end{frame}
+\section{Solution}
+\begin{frame}{Solution}
+\begin{block}
+     
+   (a)  Given  z=2x + 3y 
+    \begin{center}
+        E(z)=0
+    \end{center}
+    \begin{equation}
+        \sigma^2_{z}= 4\sigma^2_{x} + 9\sigma^2_{y} = 5^2
+    \end{equation}
+    \begin{center}
+        \sigma_{x}=\sigma_{y}=2
+    \end{center}
+    \begin{equation}
+        \sigma^2_{z}= 4(4)+9(4)
+    \end{equation}
+    \begin{center}
+        Hence z is N(0,\sqrt{52}
+    \end{center}
+    
+    (b) Given z=$\frac{x}{y}$
+    \begin{center}
+        From definition \sigma_{1}=\sigma_{2}=2, r=0
+    \end{center}
+    \begin{equation}
+        $F_{z}$(z)= $\frac{1}{2}$ +$\frac{1}{\pi}$arc tan z
+        \implies $\f_{z}$(z)= $\frac{1}{\pi(1+z^2)}$
+    \end{equation}
+    
+\end{block}
+    
+\end{frame}
+
+
+\end{document}
